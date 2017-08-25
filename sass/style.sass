@@ -1,0 +1,214 @@
+/*reset
+
+*
+  box-sizing: border-box
+
+html, body
+  margin: 0
+
+/*main css
+
+.row
+  width: 100%
+  padding: 30px
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+.jumbotron-nav
+  background-image: url(https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  min-height: 500px
+  padding: 50px 150px
+  color: white
+  h1
+    font-size: 80px
+    text-transform: uppercase
+    margin-bottom: 5%
+  h3
+    margin-top: 10%
+
+.btn-outline
+  border: 2px solid white !important
+  &:hover
+    background-color: white
+    color: black
+
+.container-home
+  i
+    font-size: 200px
+    opacity: 0.15
+  p
+    text-align: left
+    padding: 0 50px
+
+.icon-btn
+  width: 100px
+  height: 100px
+  border: 0
+  background-color: #222222
+  border-radius: 50%
+  font-size: 50px
+  vertical-align: middle
+  color: white
+
+.container-services
+  p
+    text-align: left
+    padding-right: 50px
+  h4
+    font-weight: 800
+    text-align: left
+
+.bubble-right
+  position: relative
+  padding: 50px
+  margin: 30px 0
+  background: #FFFFFF
+  -webkit-border-radius: 0px
+  -moz-border-radius: 0px
+  border-radius: 0px
+  border: silver solid 1px
+  &:after
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 14px 0 14px 17px
+    border-color: transparent #FFFFFF
+    display: block
+    width: 0
+    z-index: 1
+    right: -17px
+    top: 51px
+  \:before
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 14px 0 14px 17px
+    border-color: transparent #7F7F7F
+    display: block
+    width: 0
+    z-index: 0
+    right: -18px
+    top: 51px
+
+.bubble-left
+  position: relative
+  padding: 50px
+  margin: 30px 0
+  background: #FFFFFF
+  -webkit-border-radius: 0px
+  -moz-border-radius: 0px
+  border-radius: 0px
+  border: silver solid 1px
+  &:after
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 14px 17px 14px 0
+    border-color: transparent #FFFFFF
+    display: block
+    width: 0
+    z-index: 1
+    left: -17px
+    top: 51px
+  &:before
+    content: ''
+    position: absolute
+    border-style: solid
+    border-width: 14px 17px 14px 0
+    border-color: transparent silver
+    display: block
+    width: 0
+    z-index: 0
+    left: -18px
+    top: 51px
+
+.team
+  h1
+    margin-top: 40px
+  [class^="img-"]
+    margin: 20px
+
+.team-article
+  padding-top: 50px
+
+.btn-icon
+  background: none
+  vertical-align: middle
+  color: white
+  border: 3px solid white
+  border-radius: 50%
+  font-size: 14px
+  margin: 5px
+  padding: 10px 15px
+
+[class^="img-"]
+  width: 200px
+
+.footer-btn-icon
+  background: none
+  border: 0
+  font-size: 24px
+
+.footer p
+  margin: 0 10px
+
+.form
+  margin: 5px
+  border-radius: 5px
+
+/*helper
+
+.margin-left
+  margin-left: 40px
+
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.partners-padding
+  padding-left: 200px
+  padding-right: 100px
+
+.padding-vertical
+  padding-left: 100px
+  padding-right: 100px
+
+.color-blue
+  color: #8992C8
+
+.float-right
+  float: right
+
+.font-bold
+  font-weight: 900
+
+.text-white
+  color: white
+
+.gray-bg
+  background-color: #FAFAFA
+
+.black-bg
+  background-color: #111111
+
+.white-bg
+  background-color: white
+
+.blue-bg
+  background-color: #768FC7
+
+.green-bg
+    background-color: #52B965
+
+.transparent-bg
+  background-color: rgba(0, 0, 0, 0.01)
