@@ -45,4 +45,6 @@ module.exports = function(grunt) {
     // Default task(s).
 
     grunt.registerTask('default', ['scss', 'imagemin', 'watch']);
+    grunt.registerTask('img', ['imagemin']);
+    grunt.registerTask('scss', ['scss', 'watch']);
     };
