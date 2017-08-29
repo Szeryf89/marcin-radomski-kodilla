@@ -1,4 +1,4 @@
-.margin-left {
+.ml40 {
     margin-left: 40px;
 }
 
@@ -10,30 +10,20 @@
     text-align: left;
 }
 
-.partners-padding {
-    padding-left: 200px;
-    padding-right: 100px;
-}
-
-.padding-vertical {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 .color-blue {
-    color: #8992C8;
+    color: $textBlue;
 }
 
 .float-right {
     float: right;
 }
 
-.font-bold {
+.bold900 {
     font-weight: 900;
 }
 
 .text-white {
-    color: white;
+    color: $textWhite;
 }
 
 .gray-bg {
@@ -41,7 +31,7 @@
 }
 
 .black-bg {
-    background-color: #111111;
+    background-color: $bgBlack;
 }
 
 .white-bg {
@@ -49,7 +39,7 @@
 }
 
 .blue-bg {
-    background-color: #768fc7;
+    background-color: $bgBlue;
 }
 
 .transparent-bg {
@@ -60,68 +50,72 @@
     position: relative;
     padding: 50px;
     margin: 30px 0;
-    background: #ffffff;
+    background: $primaryColor;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    border: silver solid 1px;
-    &::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 14px 0 14px 17px;
-    border-color: transparent #ffffff;
-    display: block;
-    width: 0;
-    z-index: 1;
-    right: -17px;
-    top: 51px;
-    }
-    &::before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 14px 0 14px 17px;
-    border-color: transparent #7f7f7f;
-    display: block;
-    width: 0;
-    z-index: 0;
-    right: -18px;
-    top: 51px;
-    }
+    border: $borderSilver solid 1px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 14px 0 14px 17px;
+            border-color: transparent $primaryColor;
+            display: block;
+            width: 0;
+            z-index: 1;
+            right: -17px;
+            top: 51px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 14px 0 14px 17px;
+            border-color: transparent $borderGrey;
+            display: block;
+            width: 0;
+            z-index: 0;
+            right: -18px;
+            top: 51px;
+        }
 }
 
 .bubble-left {
     position: relative;
     padding: 50px;
     margin: 30px 0;
-    background: #ffffff;
+    background: $primaryColor;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    border: silver solid 1px;
-    &::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 14px 17px 14px 0;
-    border-color: transparent #ffffff;
-    display: block;
-    width: 0;
-    z-index: 1;
-    left: -17px;
-    top: 51px;
-    }
-    &::before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 14px 17px 14px 0;
-    border-color: transparent silver;
-    display: block;
-    width: 0;
-    z-index: 0;
-    left: -18px;
-    top: 51px;
-    }
+    border: $borderSilver solid 1px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 14px 17px 14px 0;
+            border-color: transparent $primaryColor;
+            display: block;
+            width: 0;
+            z-index: 1;
+            left: -17px;
+            top: 51px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 14px 17px 14px 0;
+            border-color: transparent $borderSilver;
+            display: block;
+            width: 0;
+            z-index: 0;
+            left: -18px;
+            top: 51px;
+        }
 }

@@ -1,0 +1,13 @@
+.row {
+    width: 100%;
+    padding: 30px;
+    &::before {
+    content: " ";
+    display: table;
+    }
+    &::after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+}
