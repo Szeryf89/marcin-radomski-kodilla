@@ -1,4 +1,3 @@
-/css/bootstrap/*.css
-/css/*.css
+css/*
 node_modules/*
 images/build/*
