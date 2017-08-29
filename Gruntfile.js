@@ -2,13 +2,15 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        sass: {
+        scss: {
             options: {
-                sourceMap: true
+                sourceMap: true,
+                outputStyle: 'compressed',
+                sourceComments: true
             },
             dist: {
                 files: {
-                    'css/style.css': 'sass/style.sass'
+                    'css/style.css': 'scss/style.scss'
                 }
             }
         },
@@ -26,8 +28,8 @@ module.exports = function(grunt) {
 
         watch: {
             scripts: {
-                files: ['sass/*.sass'],
-                tasks: ['sass'],
+                files: ['scss/*.scss'],
+                tasks: ['scss'],
                 options: {
                     spawn: false,
                 },
@@ -36,11 +38,11 @@ module.exports = function(grunt) {
     });
 
     // Load the plugins tasks
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-scss');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
 
-    grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
+    grunt.registerTask('default', ['scss', 'imagemin', 'watch']);
     };
